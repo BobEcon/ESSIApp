@@ -6,17 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C518C70C2DB6F449004ED41B /* SnacksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518C7072DB6F449004ED41B /* SnacksListView.swift */; };
+		C518C70D2DB6F449004ED41B /* ESSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518C7082DB6F449004ED41B /* ESSI.swift */; };
+		C518C70E2DB6F449004ED41B /* ESSIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518C7092DB6F449004ED41B /* ESSIApp.swift */; };
+		C518C70F2DB6F449004ED41B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C518C7062DB6F449004ED41B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		C518C7062DB6F449004ED41B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C518C7072DB6F449004ED41B /* SnacksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacksListView.swift; sourceTree = "<group>"; };
+		C518C7082DB6F449004ED41B /* ESSI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESSI.swift; sourceTree = "<group>"; };
+		C518C7092DB6F449004ED41B /* ESSIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESSIApp.swift; sourceTree = "<group>"; };
+		C518C70A2DB6F449004ED41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5231BA32DB6EF93004846F8 /* ESSI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ESSI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C5231BA52DB6EF93004846F8 /* ESSI */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ESSI;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C5231BA02DB6EF93004846F8 /* Frameworks */ = {
@@ -29,10 +33,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C518C70B2DB6F449004ED41B /* ESSI */ = {
+			isa = PBXGroup;
+			children = (
+				C518C7072DB6F449004ED41B /* SnacksListView.swift */,
+				C518C7112DB6F477004ED41B /* Models */,
+				C518C7092DB6F449004ED41B /* ESSIApp.swift */,
+				C518C7062DB6F449004ED41B /* Assets.xcassets */,
+				C518C70A2DB6F449004ED41B /* Info.plist */,
+			);
+			path = ESSI;
+			sourceTree = "<group>";
+		};
+		C518C7112DB6F477004ED41B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C518C7082DB6F449004ED41B /* ESSI.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C5231B9A2DB6EF93004846F8 = {
 			isa = PBXGroup;
 			children = (
-				C5231BA52DB6EF93004846F8 /* ESSI */,
+				C518C70B2DB6F449004ED41B /* ESSI */,
 				C5231BA42DB6EF93004846F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,9 +83,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C5231BA52DB6EF93004846F8 /* ESSI */,
 			);
 			name = ESSI;
 			packageProductDependencies = (
@@ -109,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C518C70F2DB6F449004ED41B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C518C70C2DB6F449004ED41B /* SnacksListView.swift in Sources */,
+				C518C70D2DB6F449004ED41B /* ESSI.swift in Sources */,
+				C518C70E2DB6F449004ED41B /* ESSIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,9 +281,9 @@
 				DEVELOPMENT_TEAM = 6LKT6XC2AH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ESSI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,9 +309,9 @@
 				DEVELOPMENT_TEAM = 6LKT6XC2AH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ESSI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
