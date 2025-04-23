@@ -16,4 +16,10 @@ struct ESSIApp: App {
                 .modelContainer(for: Snack.self)
         }
     }
+    
+    // Will allow us to find where our simulator data is saved
+    init() {
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
+    }
+    
 }

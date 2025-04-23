@@ -11,6 +11,7 @@ import SwiftData
 struct SnacksListView: View {
     
     @Query var snacks: [Snack]
+    @State private var sheetIsPresented: Bool = false
     @Environment(\.modelContext) var modelContext
     
     var body: some View {
@@ -19,7 +20,7 @@ struct SnacksListView: View {
                 ForEach(snacks) { snack in
                     VStack(alignment: .leading) {
                         NavigationLink {
-                            
+                           DetailView(snack: snack)
                         } label: {
                             Text(snack.name)
                         }
@@ -49,6 +50,20 @@ struct SnacksListView: View {
             .listStyle(.plain)
             .navigationTitle(Text("Snacks on Hand:"))
             .navigationBarTitleDisplayMode(.automatic)
+            .sheet(isPresented: $sheetIsPresented) {
+                NavigationStack {
+                    DetailView(snack: Snack())
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        sheetIsPresented.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
         }
         
     }
